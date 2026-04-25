@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Filo Austral Expediciones — Expediciones volcánicas y trekking guiado en el sur de Chile. Puerto Montt, Región de Los Lagos.">
+    <title>Filo Austral Expediciones | Puerto Montt, Chile</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-logo">
+                <img src="assets/logo.png" alt="Filo Austral" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="logo-text" style="display:none">FILO AUSTRAL</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#expediciones">Expediciones</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#guias">Guías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="btn btn-accent nav-cta">Reserva tu lugar</a>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tag">Puerto Montt · Región de Los Lagos · Chile</p>
+            <h1 class="hero-headline">El filo es donde<br>empieza la aventura real</h1>
+            <p class="hero-sub">Expediciones volcánicas y trekking guiado en el sur de Chile</p>
+            <div class="hero-actions">
+                <a href="#expediciones" class="btn btn-accent">Ver expediciones</a>
+                <a href="#nosotros" class="btn btn-ghost">¿Quiénes somos?</a>
+            </div>
+        </div>
+        <a href="#propuesta" class="hero-scroll" aria-label="Ir abajo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+    </section>
+
+    <!-- ===================== PROPUESTA DE VALOR ===================== -->
+    <section class="section" id="propuesta">
+        <div class="container">
+            <div class="propuesta-grid">
+
+                <div class="propuesta-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="prop-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Seguridad técnica real</h3>
+                    <p>Guías certificados con formación WFR, protocolos de gestión de riesgo y equipamiento técnico de montaña en cada salida.</p>
+                </div>
+
+                <div class="propuesta-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="prop-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Grupos reducidos</h3>
+                    <p>Máximo 6 personas por salida. Cada expedición es una experiencia personalizada, no un tour masivo.</p>
+                </div>
+
+                <div class="propuesta-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="prop-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 20h20M6 20V10l6-6 6 6v10M10 20v-5h4v5"/></svg>
+                    </div>
+                    <h3>Formación en terreno</h3>
+                    <p>No solo subes. Aprendes lectura de montaña, técnica de marcha, uso de crampones y toma de decisiones en ruta.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPEDICIONES ===================== -->
+    <section class="section section-dark" id="expediciones">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nuestras rutas</span>
+                <h2 class="section-title">Expediciones</h2>
+                <p class="section-desc">Todos nuestros programas son guiados, con equipamiento técnico incluido y grupos de 4 a 6 personas.</p>
+            </div>
+
+            <div class="cards-grid">
+
+                <!-- Card 1 -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80" alt="Volcán Calbuco" loading="lazy">
+                        <span class="badge badge-orange">Media-Alta</span>
+                        <span class="badge-cupos">Cupos limitados</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Volcán Calbuco</h3>
+                        <div class="card-meta">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                2 días
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                                4–6 personas
+                            </span>
+                        </div>
+                        <p class="card-desc">Ascensión al icónico volcán de la Región de Los Lagos. Cruce de lahar, acceso técnico y cráter activo con vistas a la Patagonia.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$150.000 <small>/persona</small></span>
+                            <a href="#contacto" class="btn btn-accent btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80" alt="Volcán Casablanca" loading="lazy">
+                        <span class="badge badge-green">Media</span>
+                        <span class="badge-cupos">Cupos limitados</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Volcán Casablanca</h3>
+                        <div class="card-meta">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                1 día
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                                4–6 personas
+                            </span>
+                        </div>
+                        <p class="card-desc">Expedición de un día al volcán Casablanca. Ideal para iniciarse en trekking técnico con vistas al Lago Rupanco y cordillera andina.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$120.000 <small>/persona</small></span>
+                            <a href="#contacto" class="btn btn-accent btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80" alt="Paso Desolación" loading="lazy">
+                        <span class="badge badge-green">Media</span>
+                        <span class="badge-cupos">Cupos limitados</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Paso Desolación</h3>
+                        <div class="card-meta">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                2 días
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                                4–6 personas
+                            </span>
+                        </div>
+                        <p class="card-desc">Travesía en el Parque Nacional Vicente Pérez Rosales. Bosque valdiviano, ventisqueros y uno de los paisajes más remotos del sur de Chile.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$130.000 <small>/persona</small></span>
+                            <a href="#contacto" class="btn btn-accent btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1534294668821-28a3054f4256?auto=format&fit=crop&w=800&q=80" alt="Volcán Yates" loading="lazy">
+                        <span class="badge badge-red">Alta</span>
+                        <span class="badge-cupos">Cupos limitados</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Volcán Yates</h3>
+                        <div class="card-meta">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                2–3 días
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                                4–6 personas
+                            </span>
+                        </div>
+                        <p class="card-desc">Expedición de alta montaña al volcán Yates. Requiere experiencia previa en nieve. Crampones, piolet y técnica glaciar en terreno exigente.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$160.000 <small>/persona</small></span>
+                            <a href="#contacto" class="btn btn-accent btn-sm">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STATS / POR QUÉ ELEGIRNOS ===================== -->
+    <section class="section stats-section" id="stats">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">En números</span>
+                <h2 class="section-title">¿Por qué elegirnos?</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+                    <span class="stat-num">50+</span>
+                    <span class="stat-label">Expediciones realizadas</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label">Grupos menores a 6 personas</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="stat-num">0</span>
+                    <span class="stat-label">Accidentes graves en operación</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="stat-num">R.L.L.</span>
+                    <span class="stat-label">Región de Los Lagos, Patagonia Norte</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== NOSOTROS ===================== -->
+    <section class="section section-dark" id="nosotros">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">El equipo</span>
+                <h2 class="section-title">Nosotros</h2>
+                <p class="section-desc">Somos dos hermanos que decidieron transformar la montaña en un proyecto de vida. Filo Austral nació de la convicción de que la Patagonia merece ser explorada con criterio técnico, respeto y formación real.</p>
+            </div>
+            <div class="guias-grid" id="guias">
+
+                <div class="guia-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="guia-foto">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&h=400&q=80" alt="Javier Castillo" loading="lazy">
+                    </div>
+                    <div class="guia-info">
+                        <h3 class="guia-nombre">Javier Castillo</h3>
+                        <p class="guia-rol">Co-fundador · Guía de Montaña</p>
+                        <p class="guia-bio">Ingeniero en Expediciones y Ecoturismo, certificado WFR (Wilderness First Responder). Más de 8 años recorriendo los volcanes y glaciares de la Región de Los Lagos. Especialista en técnica de alta montaña y gestión de grupos en terreno.</p>
+                        <div class="guia-tags">
+                            <span>WFR Certificado</span>
+                            <span>Alta Montaña</span>
+                            <span>Glaciología Básica</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guia-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="guia-foto">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=400&q=80" alt="Bastián Castillo" loading="lazy">
+                    </div>
+                    <div class="guia-info">
+                        <h3 class="guia-nombre">Bastián Castillo</h3>
+                        <p class="guia-rol">Co-fundador · Estrategia & Operaciones</p>
+                        <p class="guia-bio">Ingeniero en Control de Gestión y analista de datos. Responsable de la estrategia comercial, operaciones y experiencia del cliente de Filo Austral. Atleta amateur en pruebas de velocidad y apasionado de la montaña patagónica.</p>
+                        <div class="guia-tags">
+                            <span>Gestión & Operaciones</span>
+                            <span>Análisis de Datos</span>
+                            <span>Atleta</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALERÍA / DESTINOS ===================== -->
+    <section class="section" id="destinos">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Donde operamos</span>
+                <h2 class="section-title">Destinos</h2>
+                <p class="section-desc">Operamos en los parques y reservas más icónicos de la Región de Los Lagos</p>
+            </div>
+            <div class="galeria-grid">
+                <div class="galeria-item grande" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?auto=format&fit=crop&w=900&q=80" alt="Patagonia volcanes" loading="lazy">
+                    <div class="galeria-overlay"><span>Región de Los Lagos</span></div>
+                </div>
+                <div class="galeria-item" data-aos="fade-up" data-aos-delay="50">
+                    <img src="https://images.unsplash.com/photo-1609349093815-c21fc56b527a?auto=format&fit=crop&w=500&q=80" alt="Volcán" loading="lazy">
+                    <div class="galeria-overlay"><span>Volcán Calbuco</span></div>
+                </div>
+                <div class="galeria-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=500&q=80" alt="Montaña nevada" loading="lazy">
+                    <div class="galeria-overlay"><span>Volcán Yates</span></div>
+                </div>
+                <div class="galeria-item" data-aos="fade-up" data-aos-delay="150">
+                    <img src="https://images.unsplash.com/photo-1476611338391-6f395a0dd82e?auto=format&fit=crop&w=500&q=80" alt="Bosque sur" loading="lazy">
+                    <div class="galeria-overlay"><span>P.N. Vicente Pérez Rosales</span></div>
+                </div>
+                <div class="galeria-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1455156218388-5e61b526818b?auto=format&fit=crop&w=500&q=80" alt="Lago patagónico" loading="lazy">
+                    <div class="galeria-overlay"><span>Lago Rupanco</span></div>
+                </div>
+                <div class="galeria-item" data-aos="fade-up" data-aos-delay="250">
+                    <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=500&q=80" alt="Trekking montaña" loading="lazy">
+                    <div class="galeria-overlay"><span>Paso Desolación</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIOS ===================== -->
+    <section class="section section-dark" id="testimonios">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Lo que dicen</span>
+                <h2 class="section-title">Testimonios</h2>
+            </div>
+            <div class="testimonios-wrap" data-aos="fade-up">
+                <div class="testimonios-track" id="testimoniosTrack">
+
+                    <div class="testimonio-item">
+                        <div class="testimonio-stars">★★★★★</div>
+                        <p class="testimonio-texto">"Una experiencia que superó todas mis expectativas. El nivel técnico de los guías da una tranquilidad total en terreno difícil. Volveré sin dudarlo para el Volcán Yates."</p>
+                        <div class="testimonio-autor">
+                            <span class="autor-nombre">Rodrigo Alvarado</span>
+                            <span class="autor-ciudad">Santiago, Chile</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonio-item">
+                        <div class="testimonio-stars">★★★★★</div>
+                        <p class="testimonio-texto">"Hice el Calbuco con Filo Austral y fue transformador. Grupo pequeño, guías que te enseñan mientras suben, y una organización impecable desde el primer contacto."</p>
+                        <div class="testimonio-autor">
+                            <span class="autor-nombre">Valentina Moreno</span>
+                            <span class="autor-ciudad">Concepción, Chile</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonio-item">
+                        <div class="testimonio-stars">★★★★★</div>
+                        <p class="testimonio-texto">"Lo que más valoro es que no es un tour. Es una expedición real. Aprendí a usar crampones, leer el terreno y tomar decisiones. Eso no lo encuentras en cualquier empresa."</p>
+                        <div class="testimonio-autor">
+                            <span class="autor-nombre">Diego Fuentes</span>
+                            <span class="autor-ciudad">Puerto Montt, Chile</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="testimonios-nav">
+                    <button class="nav-dot active" onclick="goToTestimonio(0)" aria-label="Testimonio 1"></button>
+                    <button class="nav-dot" onclick="goToTestimonio(1)" aria-label="Testimonio 2"></button>
+                    <button class="nav-dot" onclick="goToTestimonio(2)" aria-label="Testimonio 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACTO / RESERVA ===================== -->
+    <section class="section" id="contacto">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">¿Listo para subir?</span>
+                <h2 class="section-title">Reserva tu lugar</h2>
+                <p class="section-desc">Cupos limitados a 6 personas por salida. Completa el formulario y te contactamos en menos de 24 horas.</p>
+            </div>
+
+            <div class="contacto-grid">
+
+                <form class="reserva-form" id="reservaForm" data-aos="fade-up" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            <span class="field-error" id="err-nombre"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            <span class="field-error" id="err-email"></span>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX" required>
+                            <span class="field-error" id="err-telefono"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="expedicion">Expedición de interés *</label>
+                            <select id="expedicion" name="expedicion" required>
+                                <option value="">Selecciona una expedición</option>
+                                <option value="calbuco">Volcán Calbuco — $150.000</option>
+                                <option value="casablanca">Volcán Casablanca — $120.000</option>
+                                <option value="desolacion">Paso Desolación — $130.000</option>
+                                <option value="yates">Volcán Yates — $160.000</option>
+                            </select>
+                            <span class="field-error" id="err-expedicion"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha estimada</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje o consulta</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Tienes experiencia previa? ¿Alguna pregunta sobre el equipamiento o la ruta?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-full" id="submitBtn">
+                        Enviar solicitud de reserva
+                    </button>
+                    <div class="form-success" id="formSuccess" style="display:none">
+                        ¡Mensaje enviado! Te contactaremos en menos de 24 horas.
+                    </div>
+                </form>
+
+                <div class="contacto-info" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-block">
+                        <h4>Contacto directo</h4>
+                        <a href="https://wa.me/56900000000" target="_blank" rel="noopener" class="contact-link whatsapp">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            WhatsApp
+                        </a>
+                        <a href="https://instagram.com/filoaustral" target="_blank" rel="noopener" class="contact-link instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            @filoaustral
+                        </a>
+                    </div>
+                    <div class="info-block">
+                        <h4>Ubicación</h4>
+                        <p>Puerto Montt, Región de Los Lagos<br>Patagonia Norte, Chile</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>¿Qué incluye cada expedición?</h4>
+                        <ul class="incluye-list">
+                            <li>✓ Guía certificado en terreno</li>
+                            <li>✓ Equipamiento técnico (crampones, piolet)</li>
+                            <li>✓ Transporte desde Puerto Montt</li>
+                            <li>✓ Alimentación en ruta</li>
+                            <li>✓ Seguro de accidentes en montaña</li>
+                            <li>✓ Kit de primeros auxilios WFR</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Filo Austral" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <span class="logo-text footer-logo-text" style="display:none">FILO AUSTRAL</span>
+                    <p>Expediciones volcánicas y trekking guiado en el sur de Chile. Técnica real, grupos pequeños, montaña auténtica.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#expediciones">Expediciones</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-redes">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/filoaustral" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://wa.me/56900000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Puerto Montt, Región de Los Lagos, Chile</p>
+                <p>© 2026 Filo Austral Expediciones. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
