@@ -66,7 +66,9 @@ setInterval(() => {
     goToTestimonio(next);
 }, 5000);
 
-// ===== FORM VALIDATION =====
+// ===== FORM VALIDATION + WHATSAPP =====
+// TODO: reemplazar por el número real de WhatsApp Business (formato 56 9 XXXX XXXX, sin +)
+const WHATSAPP_NUMBER = '56983878181';
 const form = document.getElementById('reservaForm');
 
 form.addEventListener('submit', (e) => {
@@ -98,19 +100,25 @@ form.addEventListener('submit', (e) => {
     });
 
     if (valid) {
-        const btn = document.getElementById('submitBtn');
-        btn.textContent = 'Enviando…';
-        btn.disabled = true;
+        const expSelect = document.getElementById('expedicion');
+        const data = {
+            Nombre: document.getElementById('nombre').value.trim(),
+            Email: document.getElementById('email').value.trim(),
+            Teléfono: document.getElementById('telefono').value.trim(),
+            Expedición: expSelect.options[expSelect.selectedIndex].text,
+            'Fecha estimada': document.getElementById('fecha').value || 'por definir',
+            Mensaje: document.getElementById('mensaje').value.trim() || '—',
+        };
 
-        setTimeout(() => {
-            form.reset();
-            btn.textContent = 'Enviar solicitud de reserva';
-            btn.disabled = false;
-            document.getElementById('formSuccess').style.display = 'block';
-            setTimeout(() => {
-                document.getElementById('formSuccess').style.display = 'none';
-            }, 5000);
-        }, 1200);
+        const lines = Object.entries(data).map(([k, v]) => `${k}: ${v}`).join('\n');
+        const text = encodeURIComponent(`Hola Filo Austral 👋 Quiero reservar:\n${lines}`);
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
+
+        form.reset();
+        const success = document.getElementById('formSuccess');
+        success.textContent = 'Te redirigimos a WhatsApp para confirmar tu reserva.';
+        success.style.display = 'block';
+        setTimeout(() => { success.style.display = 'none'; }, 5000);
     }
 });
 
