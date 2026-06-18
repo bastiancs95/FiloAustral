@@ -9,7 +9,7 @@
     <!-- Open Graph (compartir en WhatsApp/IG) -->
     <meta property="og:title" content="Filo Austral Expediciones">
     <meta property="og:description" content="Expediciones volcánicas y trekking guiado en el sur de Chile. Puerto Montt, Región de Los Lagos.">
-    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:image" content="assets/logo-light.jpg">
     <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
@@ -28,7 +28,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#inicio" class="nav-logo">
-                <img src="assets/logo.png" alt="Filo Austral" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <img src="assets/logo-light.jpg" alt="Filo Austral Expediciones" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                 <span class="logo-text" style="display:none">FILO AUSTRAL</span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -47,7 +47,10 @@
 
     <!-- ===================== HERO ===================== -->
     <section class="hero" id="inicio">
-        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80')"></div>
+        <video class="hero-video" autoplay muted loop playsinline preload="auto"
+               poster="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80">
+            <source src="assets/hero.mp4" type="video/mp4">
+        </video>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <p class="hero-tag">Puerto Montt · Región de Los Lagos · Chile</p>
@@ -102,13 +105,13 @@
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag">Nuestras rutas</span>
                 <h2 class="section-title">Expediciones</h2>
-                <p class="section-desc">Todos nuestros programas son guiados, con equipamiento técnico incluido y grupos de 4 a 6 personas.</p>
+                <p class="section-desc">Todos nuestros programas son guiados, con equipamiento técnico incluido y grupos de 4 a 6 personas. Abre cada programa para ver el itinerario completo y descargar el PDF.</p>
             </div>
 
             <div class="cards-grid">
 
-                <!-- Card 1 -->
-                <div class="exp-card" data-aos="fade-up" data-aos-delay="0">
+                <!-- Calbuco -->
+                <a href="calbuco.html" class="exp-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80" alt="Volcán Calbuco" loading="lazy">
                         <span class="badge badge-orange">Media-Alta</span>
@@ -119,23 +122,23 @@
                         <div class="card-meta">
                             <span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                                2 días
+                                1 a 2 días
                             </span>
                             <span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
                                 4–6 personas
                             </span>
                         </div>
-                        <p class="card-desc">Ascensión al icónico volcán de la Región de Los Lagos. Cruce de lahar, acceso técnico y cráter activo con vistas a la Patagonia.</p>
+                        <p class="card-desc">Ascensión al icónico volcán de la Región de Los Lagos. Cruce de lahar, acceso técnico y cumbre con vistas a la Patagonia.</p>
                         <div class="card-footer">
-                            <span class="card-price">$190.000 <small>/persona</small></span>
-                            <a href="#contacto" class="btn btn-accent btn-sm">Reservar</a>
+                            <span class="card-price">desde $170.000 <small>/persona</small></span>
+                            <span class="btn btn-accent btn-sm">Ver programa</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Card 2 -->
-                <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+                <!-- Casablanca -->
+                <a href="casablanca.html" class="exp-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80" alt="Volcán Casablanca" loading="lazy">
                         <span class="badge badge-green">Media</span>
@@ -153,23 +156,50 @@
                                 4–6 personas
                             </span>
                         </div>
-                        <p class="card-desc">Expedición de un día al volcán Casablanca. Ideal para iniciarse en trekking técnico con vistas al Lago Rupanco y cordillera andina.</p>
+                        <p class="card-desc">El volcán ideal para iniciarse en montaña: baja exigencia técnica, lindas vistas a los lagos Puyehue y Rupanco. Perfecto en familia.</p>
                         <div class="card-footer">
                             <span class="card-price">$150.000 <small>/persona</small></span>
-                            <a href="#contacto" class="btn btn-accent btn-sm">Reservar</a>
+                            <span class="btn btn-accent btn-sm">Ver programa</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Card 3 -->
-                <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+                <!-- Osorno -->
+                <a href="osorno.html" class="exp-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="card-img-wrap">
-                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80" alt="Paso Desolación" loading="lazy">
-                        <span class="badge badge-green">Media</span>
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Volcán Osorno" loading="lazy">
+                        <span class="badge badge-red">Alta</span>
                         <span class="badge-cupos">Cupos limitados</span>
                     </div>
                     <div class="card-body">
-                        <h3 class="card-title">Paso Desolación</h3>
+                        <h3 class="card-title">Volcán Osorno</h3>
+                        <div class="card-meta">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                1 día
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                                4–6 personas
+                            </span>
+                        </div>
+                        <p class="card-desc">El cono perfecto de la Región de Los Lagos. Ascenso sobre glaciar con crampones y piolet hasta una cumbre de 360° de volcanes, lagos y bosques.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$190.000 <small>/persona</small></span>
+                            <span class="btn btn-accent btn-sm">Ver programa</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Puyehue -->
+                <a href="puyehue.html" class="exp-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?auto=format&fit=crop&w=800&q=80" alt="Volcán Puyehue" loading="lazy">
+                        <span class="badge badge-orange">Media-Alta</span>
+                        <span class="badge-cupos">Cupos limitados</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Volcán Puyehue</h3>
                         <div class="card-meta">
                             <span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -180,16 +210,16 @@
                                 4–6 personas
                             </span>
                         </div>
-                        <p class="card-desc">Travesía en el Parque Nacional Vicente Pérez Rosales. Bosque valdiviano, ventisqueros y uno de los paisajes más remotos del sur de Chile.</p>
+                        <p class="card-desc">Travesía de dos días por el desierto volcánico del P.N. Puyehue. Fumarolas, campos de lava y una cumbre amplia sobre la cordillera.</p>
                         <div class="card-footer">
-                            <span class="card-price">$170.000 <small>/persona</small></span>
-                            <a href="#contacto" class="btn btn-accent btn-sm">Reservar</a>
+                            <span class="card-price">$200.000 <small>/persona</small></span>
+                            <span class="btn btn-accent btn-sm">Ver programa</span>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Card 4 -->
-                <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
+                <!-- Yates -->
+                <a href="yates.html" class="exp-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1534294668821-28a3054f4256?auto=format&fit=crop&w=800&q=80" alt="Volcán Yates" loading="lazy">
                         <span class="badge badge-red">Alta</span>
@@ -200,20 +230,47 @@
                         <div class="card-meta">
                             <span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                                2–3 días
+                                2 días
                             </span>
                             <span>
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
                                 4–6 personas
                             </span>
                         </div>
-                        <p class="card-desc">Expedición de alta montaña al volcán Yates. Requiere experiencia previa en nieve. Crampones, piolet y técnica glaciar en terreno exigente.</p>
+                        <p class="card-desc">Expedición de alta montaña en el fiordo de Llanquihue. Requiere experiencia previa: técnica glaciar, campamento y un día de cumbre exigente.</p>
                         <div class="card-footer">
-                            <span class="card-price">$200.000 <small>/persona</small></span>
-                            <a href="#contacto" class="btn btn-accent btn-sm">Reservar</a>
+                            <span class="card-price">$230.000 <small>/persona</small></span>
+                            <span class="btn btn-accent btn-sm">Ver programa</span>
                         </div>
                     </div>
-                </div>
+                </a>
+
+                <!-- Paso Desolación -->
+                <a href="paso-desolacion.html" class="exp-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=800&q=80" alt="Paso Desolación" loading="lazy">
+                        <span class="badge badge-green">Media</span>
+                        <span class="badge-cupos">Cupos limitados</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Paso Desolación</h3>
+                        <div class="card-meta">
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                1 día
+                            </span>
+                            <span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                                4–6 personas
+                            </span>
+                        </div>
+                        <p class="card-desc">Travesía de un día por el P.N. Vicente Pérez Rosales, al pie del Osorno. Bosque, lava y miradores al lago Todos los Santos. Nuestra ruta más accesible.</p>
+                        <div class="card-footer">
+                            <span class="card-price">$140.000 <small>/persona</small></span>
+                            <span class="btn btn-accent btn-sm">Ver programa</span>
+                        </div>
+                    </div>
+                </a>
 
             </div>
         </div>
@@ -267,6 +324,7 @@
                         <p class="guia-bio">Ingeniero en Expediciones y Ecoturismo, certificado WFR (Wilderness First Responder). Más de 8 años recorriendo los volcanes y glaciares de la Región de Los Lagos. Especialista en técnica de alta montaña y gestión de grupos en terreno.</p>
                         <div class="guia-tags">
                             <span>WFR Certificado</span>
+                            <span>Registrado en Sernatur</span>
                             <span>Alta Montaña</span>
                             <span>Glaciología Básica</span>
                         </div>
@@ -411,10 +469,12 @@
                             <label for="expedicion">Expedición de interés *</label>
                             <select id="expedicion" name="expedicion" required>
                                 <option value="">Selecciona una expedición</option>
-                                <option value="calbuco">Volcán Calbuco — $190.000</option>
+                                <option value="calbuco">Volcán Calbuco — desde $170.000</option>
                                 <option value="casablanca">Volcán Casablanca — $150.000</option>
-                                <option value="desolacion">Paso Desolación — $170.000</option>
-                                <option value="yates">Volcán Yates — $200.000</option>
+                                <option value="osorno">Volcán Osorno — $190.000</option>
+                                <option value="puyehue">Volcán Puyehue — $200.000</option>
+                                <option value="yates">Volcán Yates — $230.000</option>
+                                <option value="desolacion">Paso Desolación — $140.000</option>
                             </select>
                             <span class="field-error" id="err-expedicion"></span>
                         </div>
@@ -436,6 +496,13 @@
                 </form>
 
                 <div class="contacto-info" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-block">
+                        <h4>Acreditación</h4>
+                        <div class="sello-sernatur">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                            <div><b>Guía registrado en Sernatur</b><span>Registro Nacional de Guías de Turismo Aventura</span></div>
+                        </div>
+                    </div>
                     <div class="info-block">
                         <h4>Contacto directo</h4>
                         <a href="https://wa.me/56983878181" target="_blank" rel="noopener" class="contact-link whatsapp">
@@ -473,7 +540,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/logo.png" alt="Filo Austral" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <img src="assets/logo-light.jpg" alt="Filo Austral Expediciones" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
                     <span class="logo-text footer-logo-text" style="display:none">FILO AUSTRAL</span>
                     <p>Expediciones volcánicas y trekking guiado en el sur de Chile. Técnica real, grupos pequeños, montaña auténtica.</p>
                 </div>
