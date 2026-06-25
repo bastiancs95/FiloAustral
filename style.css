@@ -422,6 +422,12 @@ ul { list-style: none; }
     color: var(--text-dim);
     font-weight: 500;
 }
+.exp-card-soon { cursor: default; }
+.exp-card-soon:hover { border-color: var(--border); box-shadow: none; transform: none; }
+.exp-card-soon:hover .card-img-wrap img { transform: none; }
+.exp-card-soon .card-img-wrap img { filter: grayscale(0.4) brightness(0.85); }
+.badge-soon { background: var(--accent); color: #fff; }
+.card-price-soon { font-size: 18px; color: var(--accent-light); letter-spacing: 0; }
 
 /* ===== STATS ===== */
 .stats-section {
