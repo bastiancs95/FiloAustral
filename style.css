@@ -72,11 +72,31 @@ ul { list-style: none; }
     height: 72px;
     gap: 24px;
 }
-.nav-logo { display: flex; align-items: center; }
+.nav-logo { display: flex; align-items: center; gap: 12px; }
 .logo-img {
-    height: 52px;
+    height: 44px;
     width: auto;
     transition: opacity var(--transition);
+}
+.logo-lockup {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.logo-lockup b {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--text);
+}
+.logo-lockup small {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4.5px;
+    color: var(--dorado);
 }
 .logo-text {
     font-family: var(--font-display);
@@ -228,6 +248,14 @@ ul { list-style: none; }
     color: var(--text);
     margin-bottom: 20px;
     text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+}
+.hero-headline-sub {
+    display: block;
+    font-size: 0.42em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--blanco-calido);
+    margin-top: 12px;
 }
 .hero-sub {
     font-size: clamp(16px, 2vw, 20px);
@@ -445,47 +473,6 @@ ul { list-style: none; }
     letter-spacing: 0.8px;
     text-transform: uppercase;
     color: var(--accent-light);
-}
-
-/* ===== STATS (variante cálida atardecer) ===== */
-.stats-section {
-    background: linear-gradient(165deg, #1D2530 0%, #17202B 55%, #241D14 100%);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    padding: 80px 24px;
-}
-.stats-section .section-tag { color: var(--dorado); }
-.stats-section .section-title { color: var(--blanco-calido); }
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2px;
-    background: rgba(212,169,105,0.18);
-    border-radius: var(--radius);
-    overflow: hidden;
-}
-.stat-item {
-    background: rgba(12,17,22,0.55);
-    padding: 40px 24px;
-    text-align: center;
-    transition: background var(--transition);
-}
-.stat-item:hover { background: rgba(12,17,22,0.35); }
-.stat-num {
-    display: block;
-    font-family: var(--font-display);
-    font-size: clamp(32px, 4vw, 52px);
-    font-weight: 700;
-    color: var(--dorado);
-    letter-spacing: 0;
-    line-height: 1;
-    margin-bottom: 8px;
-}
-.stat-label {
-    font-size: 13px;
-    color: var(--gris-subtitulo);
-    font-weight: 500;
-    line-height: 1.4;
 }
 
 /* ===== NOSOTROS / GUÍAS ===== */
@@ -831,7 +818,6 @@ ul { list-style: none; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .footer-brand { grid-column: span 2; }
 }
@@ -867,7 +853,6 @@ ul { list-style: none; }
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
     .footer-brand { grid-column: span 1; }
     .footer-bottom { flex-direction: column; text-align: center; }
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .testimonio-item { padding: 28px 20px; }
     .testimonio-texto { font-size: 15px; }
     .guia-card { flex-direction: column; }
@@ -876,7 +861,8 @@ ul { list-style: none; }
 @media (max-width: 480px) {
     .hero-actions { flex-direction: column; align-items: center; }
     .btn { width: 240px; text-align: center; }
-    .stats-grid { grid-template-columns: 1fr; }
+    .logo-lockup b { font-size: 16px; letter-spacing: 2px; }
+    .logo-lockup small { font-size: 9px; letter-spacing: 3.5px; }
 }
 
 /* ===== HERO VIDEO ===== */
@@ -1099,28 +1085,6 @@ ul { list-style: none; }
 }
 .contacto-page .cta-final { text-align: center; padding-top: 8px; }
 
-/* Sello Sernatur */
-.sello-sernatur {
-    display: inline-flex;
-    align-items: center;
-    gap: 14px;
-    padding: 14px 20px;
-    border: 1px solid var(--border-accent);
-    border-radius: var(--radius-sm);
-    background: var(--accent-dim);
-}
-.sello-sernatur svg { width: 30px; height: 30px; color: var(--accent); flex-shrink: 0; }
-.sello-sernatur b {
-    display: block;
-    font-family: var(--font-display);
-    font-size: 14px;
-    font-weight: 800;
-    color: var(--text);
-    letter-spacing: 0.2px;
-}
-.sello-sernatur span { font-size: 12px; color: var(--text-muted); }
-.sello-wrap { text-align: center; }
-
 @media (max-width: 768px) {
     .dos-cols { grid-template-columns: 1fr; }
     .equipo-list { columns: 1; }
@@ -1184,9 +1148,4 @@ ul { list-style: none; }
     .prog-cta p { color: #333 !important; }
 
     a { color: #1a1a1a !important; text-decoration: none; }
-
-    .sello-sernatur { border-color: #C8943E !important; background: #faf7f2 !important; }
-    .sello-sernatur svg { color: #B07A1E !important; }
-    .sello-sernatur b { color: #1a1a1a !important; }
-    .sello-sernatur span { color: #333 !important; }
 }
