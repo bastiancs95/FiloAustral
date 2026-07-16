@@ -49,7 +49,7 @@ function updateActiveLink() {
     });
 }
 
-// ===== TESTIMONIOS CAROUSEL =====
+// ===== TESTIMONIOS CAROUSEL (solo en inicio) =====
 let currentTestimonio = 0;
 const track = document.getElementById('testimoniosTrack');
 const dots = document.querySelectorAll('.nav-dot');
@@ -61,17 +61,19 @@ function goToTestimonio(index) {
 }
 
 // Auto-advance
-setInterval(() => {
-    const next = (currentTestimonio + 1) % dots.length;
-    goToTestimonio(next);
-}, 5000);
+if (track && dots.length) {
+    setInterval(() => {
+        const next = (currentTestimonio + 1) % dots.length;
+        goToTestimonio(next);
+    }, 5000);
+}
 
-// ===== FORM VALIDATION + WHATSAPP =====
-// TODO: reemplazar por el número real de WhatsApp Business (formato 56 9 XXXX XXXX, sin +)
+// ===== FORM: EMAIL AUTOMÁTICO (FormSubmit) + WHATSAPP =====
 const WHATSAPP_NUMBER = '56983878181';
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/filoaustralexpediciones@gmail.com';
 const form = document.getElementById('reservaForm');
 
-form.addEventListener('submit', (e) => {
+if (form) form.addEventListener('submit', (e) => {
     e.preventDefault();
 
     let valid = true;
@@ -110,15 +112,29 @@ form.addEventListener('submit', (e) => {
             Mensaje: document.getElementById('mensaje').value.trim() || '—',
         };
 
+        // Email automático a filoaustralexpediciones@gmail.com (fire-and-forget
+        // para no perder el gesto del usuario que permite abrir WhatsApp)
+        fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({
+                _subject: `Nueva solicitud de reserva — ${data['Expedición']}`,
+                _template: 'table',
+                _captcha: 'false',
+                _replyto: data.Email,
+                ...data,
+            }),
+        }).catch(() => { /* si falla el email, la solicitud igual llega por WhatsApp */ });
+
         const lines = Object.entries(data).map(([k, v]) => `${k}: ${v}`).join('\n');
         const text = encodeURIComponent(`Hola Filo Austral 👋 Quiero reservar:\n${lines}`);
         window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
 
         form.reset();
         const success = document.getElementById('formSuccess');
-        success.textContent = 'Te redirigimos a WhatsApp para confirmar tu reserva.';
+        success.textContent = 'Solicitud enviada. Te abrimos WhatsApp para confirmar tu reserva.';
         success.style.display = 'block';
-        setTimeout(() => { success.style.display = 'none'; }, 5000);
+        setTimeout(() => { success.style.display = 'none'; }, 6000);
     }
 });
 
@@ -137,7 +153,7 @@ function isValidEmail(email) {
 }
 
 // Clear errors on input
-form.querySelectorAll('input, select, textarea').forEach(input => {
+if (form) form.querySelectorAll('input, select, textarea').forEach(input => {
     input.addEventListener('input', () => {
         input.classList.remove('error');
         const errEl = document.getElementById('err-' + input.id);

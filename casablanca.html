@@ -7,10 +7,12 @@
     <title>Volcán Casablanca | Filo Austral Expediciones</title>
     <meta property="og:title" content="Volcán Casablanca — Filo Austral Expediciones">
     <meta property="og:description" content="El volcán ideal para iniciarse en montaña. 1 día, guía WFR, grupos reducidos.">
-    <meta property="og:image" content="assets/logo-light.jpg">
+    <meta property="og:image" content="assets/favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,14 +20,15 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="assets/logo-light.jpg" alt="Filo Austral Expediciones" class="logo-img">
+                <img src="assets/logo-filo-austral.png" alt="Filo Austral Expediciones" class="logo-img">
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html#expediciones">Expediciones</a></li>
-                <li><a href="index.html#nosotros">Nosotros</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="expediciones.html" class="active">Expediciones</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <a href="index.html#contacto" class="btn btn-accent nav-cta">Reserva tu lugar</a>
+            <a href="index.html#reserva" class="btn btn-accent nav-cta">Reserva tu lugar</a>
             <button class="hamburger" id="hamburger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
         </div>
     </nav>
@@ -34,18 +37,16 @@
         <div class="prog-hero-bg" style="background-image:url('assets/casablanca.jpg')"></div>
         <div class="prog-hero-overlay"></div>
         <div class="prog-hero-content">
-            <a href="index.html#expediciones" class="prog-back">← Todas las expediciones</a>
+            <a href="expediciones.html" class="prog-back">← Todas las expediciones</a>
             <h1>Volcán Casablanca</h1>
             <div class="prog-meta">
                 <span class="prog-chip">Antillanca · P.N. Puyehue</span>
                 <span class="prog-chip">1 jornada · ~8 h</span>
                 <span class="prog-chip">Exigencia baja</span>
                 <span class="prog-chip">1.990 msnm</span>
-                <span class="prog-chip price">$160.000 / persona</span>
             </div>
             <div class="prog-hero-actions">
                 <a href="https://wa.me/56983878181?text=Hola%20Filo%20Austral%20%F0%9F%91%8B%20quiero%20reservar%20el%20Volc%C3%A1n%20Casablanca" target="_blank" rel="noopener" class="btn btn-accent">Reservar por WhatsApp</a>
-                <a href="assets/programa-casablanca.pdf" download class="btn btn-ghost">Descargar programa (PDF)</a>
             </div>
         </div>
     </header>
@@ -81,7 +82,7 @@
                     <tr><th>Grupo</th><td>2 a 4 pasajeros</td></tr>
                     <tr><th>Temporada</th><td>Todo el año (en invierno, con raquetas)</td></tr>
                     <tr><th>Edad mínima</th><td>16 años (menores con autorización y adulto responsable)</td></tr>
-                    <tr><th>Precio</th><td>$160.000 por persona</td></tr>
+                    <tr><th>Valores</th><td>Consultar — varían según el número de pasajeros por salida</td></tr>
                 </table>
             </section>
 
@@ -195,11 +196,6 @@
             </div>
         </div>
     </footer>
-
-    <a class="pdf-fab" href="assets/programa-casablanca.pdf" download>
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>
-        Descargar PDF
-    </a>
 
     <script>
         const nav = document.getElementById('navbar');
