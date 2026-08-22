@@ -69,7 +69,7 @@ if (track && dots.length) {
 }
 
 // ===== FORM: EMAIL AUTOMÁTICO (FormSubmit) + WHATSAPP =====
-// Número principal: Javier. El de Bastián (+56 9 8387 8181) es canal secundario.
+// Único número de contacto de la agencia: Javier.
 const WHATSAPP_NUMBER = '56968600866';
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/filoaustralexpediciones@gmail.com';
 const form = document.getElementById('reservaForm');
